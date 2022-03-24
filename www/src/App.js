@@ -47,9 +47,7 @@ const AppStyle = styled.div`
   }
 `;
 
-// const downloader = process.env.NODE_ENV !== 'production' ? 
-//   'http://localhost:9000' : 'https://palomitas-dl.fuken.xyz';
-const downloader = 'https://palomitas-dl.fuken.xyz';
+const downloader = process.env.NODE_ENV === 'dev' ?  'http://localhost:9000' : '';
 
 class App extends Component {
   iconMap = {
